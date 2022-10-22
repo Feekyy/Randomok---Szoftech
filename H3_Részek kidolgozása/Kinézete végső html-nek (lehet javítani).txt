@@ -1,0 +1,253 @@
+Tartalomjegyzék (Az oldal pontjaira mutatnak ami a végleges html /linkek/hiperhivatkozások)
+
+1. Bevezetés
+
+2. Áttekintés
+
+3. A rendszer funkciói
+
+3.1 Első követelmény
+
+4. Használhatóság
+
+5. Megbízhatóság
+
+6. Teljesítmény
+
+7. Támogatottság
+
+8. Tervezési korlátozások
+
+9. On-line dokumentáció és Help rendszer
+
+10. Felhasznált kész komponensek
+
+11. Interfészek
+
+11.1. Felhasználói interfészek
+
+11.2. Hardware interfészek
+
+11.3. Software interfészek
+
+11.3. Kommunikációs interfészek
+
+12. Alkalmazott szabványok
+
+12.1. Kötelezően alkalmazandó szabványok
+
+12.2. Választás alapján alkalmazott szabványok
+
+13. Mellékletek
+
+
+1. Bevezetés
+
+Introduction
+
+ 
+
+2. Áttekintés
+
+Overview
+
+Ennek a fejezetnek a célja a készülő alkalmazás szempontjából fontos általános körülmények összefoglalása. Ez nem konkrét követelményeket tartalmaz, hanem azok hátterét világítja meg, segítve a következő fejezetekben részletezett információk megértését. Ide tartozhatnak olyan információk, mint például:
+
+a termék környezete,
+legfontosabb funkciók,
+a felhasználók jellemzői,
+korlátozások,
+feltételezések és függőségek,
+a követelmények csoportosításának szempontjai.
+ 
+
+3. A rendszer funkciói
+
+Specific Requirements
+
+Ebben az alpontban kell összefoglalni a a rendszerrel szemben támasztott funkcionális követelményeket.
+
+A leírás történhet természetes nyelven és/vagy user case diagramok használatával.
+
+ 
+
+Természetes nyelvi leírás esetén az egyes alpontok egymás után egy-egy követelmény specifikációját tartalmazzák. Szükség esetén a követelmények a rendszer fő szolgáltatásai, funkcionális moduljai mentén csoportosíthatók.
+
+ 
+
+Use case diagramok használata esetén a use case modell alapvetően use case csomagok sorozata. A csoportosítás ilyenkor a csomagok segítségével történik, és egy-egy alpont egy csomagra vonatkozik. Egy alpont ilyenkor az alábbiakat tartalmazza:
+
+Egy use case diagram.
+A diagramon szereplő valamennyi aktor felsorolása, és pontos definíciója (ha a dokumentumban már korábban előfordult, akkor a pontos hivatkozás a definícióra).
+A diagramon szereplő valamennyi use case felsorolása, és pontos definíciója. Egyszerű esetben ez lehet természetes nyelvi leírás, bonyolultabb esetben egyéb UML eszköz. (pl. szekvencia diagram vagy együttműködési diagram.) Minden use case leírás az alábbiakat kell hogy tartalmazza, egy – egy alpontban:
+A use case neve.
+Rövid leírás.
+Prekondíciók (előfeltételek): azon feltételek felsorolása, amelyeknek teljesülnie kell, mielőtt a use case által jelzett tevékenység elkezdődik.
+Post kondíciók : annak leírása, hogy milyen állapot következik be a use case végén.
+Szokásos működés (Main Flow): azok az események / folyamatok, amelyek a use case „szokásos” körülmények közötti működését jellemzik. (Például egy pénzfelvételnél a kártya beolvasása, pin kód beadása stb.)
+Alternatív esetek (Alternate Flows): azok az események / folyamatok, amelyek előfordulhatnak, és ezért kezelendők, de nem a „szokásos” működéshez tartoznak. (Például a pénzfelvételnél a kuncsaft helytelen pin kódot ad meg.)
+Kivételes esetek (Exception Flows): azok a lehetséges forgatókönyvek, amelyek váratlanul bekövetkezhetnek. (Például a pénzfelvételnél egy olvashatatlan kártya, vagy áramszünet stb.)
+A diagramon szereplő use case-ek kapcsolatainak leírása.
+ 
+
+És akkor itt jönnek a 3.1, 3.2 stb. alpontok az egyes követelmények és/vagy use case diagramok leírásával.
+
+3.1. Első követelmény
+
+ 
+
+4. Használhatóság
+
+Usability
+
+Itt kell összefoglalni azokat a nem funkcionális követelményeket (mindegyiket egy-egy alpontban), amelyek a rendszer használhatóságát befolyásolják. Ilyenek lehetnek például:
+
+Mennyi betanulási időre lesz majd szüksége a rendszer hatékony használatához egy kezdő és egy gyakorlott felhasználónak.
+Mennyi idő alatt tud egy adott tevékenységet végrehajtani egy átlagos felhasználó a jelenlegi módszerrel, meglévő más rendszerek, illetve a fejlesztendő rendszer segítségével.
+Melyek azok a rendszer tulajdonságok, amelyek segíthetik a kezdő felhasználót a gyors betanulásban?
+Milyen egyéb lehetőségek állnak rendelkezésre (vagy kérhetők a fejlesztőktől ingyen vagy külön díjazás fejében) a betanulás elősegítésére (tréningek, dokumentációk, könyvek, demonstrációs prototípus stb.)
+Mennyire hasonló vagy eltérő a felhasználói felület, annak használati módja a felhasználók által már korábban is használt alkalmazásokkal összehasonlítva?
+Ha a leendő alkalmazással párhuzamosan más alkalmazásokat is fognak használni a felhasználók a munkájuk során, összhangban vannak-e ezek programok a használat (elsősorban a felhasználói felület szempontjából)?
+ 
+
+ 
+
+5. Megbízhatóság
+
+Reliability
+
+A rendszerrel szemben támasztott megbízhatósági követelmények. (Minden követelmény egy alpontban.) Ilyenek lehetnek például:
+
+rendelkezésre állás (pl. %-ban): teljes használhatóság, karbantartási idő, korlátozott használhatóság,
+MTBF: (Mean Time Between Failures): hibák között eltelt átlagos idő,
+MTTR: (Man Time To Repair): egy hiba utáni javítás átlagos ideje,
+A rendszer eredményeinek pontossága, felbontása (ha értelmezhető).
+ 
+
+6. Teljesítmény
+
+Performance
+
+Itt kell leírni a rendszertől elvárt teljesítmény mutatókat, mindegyiket egy külön alpontban. Ilyenek lehetnek például:
+
+válaszidők (legalább a leggyakrabban használt funkciók esetén),
+áteresztőképesség (például tranzakció/mp),
+kapacitás (például a kezelt adatbázis max. mérete, feldolgozandó tranzakciók száma, egyidejűleg kiszolgálandó felhasználók száma stb.),
+a korlátozott használhatóság idején elvárható / teljesítendő mutatók,
+erőforrás igények (processzor sebesség, memória igény, diszk kapacitás, sávszélesség stb.).
+7. Támogatottság
+
+Supportability
+
+A rendszer üzembe helyezése után szükséges karbantartási feladatok megkönnyítésére szolgáló követelmények, egy-egy alpontban. Ezek a követelmények vonatkozhatnak mind a termékre, mind a fejlesztés folyamatára. Ilyenek lehetnek például:
+
+a használandó kódolási szabványok, elnevezési konvenciók,
+csak a karbantartóknak, illetve üzemeltetőknek szükséges funkciók,
+a működés során keletkező naplók (a későbbi hibakeresés vagy finomhangolás elősegítésére),
+a karbantartók munkáját segítő segédalkalmazások (például a naplók kiértékelésére).
+ 
+
+8. Tervezési korlátozások
+
+Design Constrainst
+
+Itt kell felsorolni egy-egy alpontban minden olyan korlátozást, amely a tervezési, esetleg az implementációs munkát befolyásolja. Ilyenek lehetnek például:
+
+a kívánatos architektúrára vonatkozó előírások (például milyen részekből [„tier”] kell felépíteni az alkalmazást),
+milyen programozási nyelv(ek)et kell használni,
+milyen fejlesztőeszközt kell használni,
+milyen újra felhasználható elemek építhetők be az alkalmazásba (komponens- és/vagy osztálykönyvtárak, kész kódok stb.),
+milyen fejlesztési módszertant, hogyan kell használni.
+ 
+
+9. On-line dokumentáció és Help rendszer
+
+Online User Documentation and Help System Requirements
+
+Kellenek-e ilyenek, ha igen, a vonatkozó információk.
+
+ 
+
+10. Felhasznált kész komponensek
+
+Third-party Components
+
+Egy-egy alpontban kell felsorolni az alkalmazásba építendő vásárolt vagy szabad felhasználású elemeket. Vásárlás esetén a részletezni kell a beszerzés körülményeit, a költségeket, a betartandó liceszelési és egyéb szabályokat. Szabad felhasználású elem esetén is fontos a forrás pontos megjelölése, a felhasználás szabályai, az alkalmazásra ebből adódó esetleges következmények, kötelezettségek.
+
+ 
+
+11. Interfészek
+
+Interfaces
+
+Ebben a fejezetben kell specifikálni a rendszer valamennyi külső kapcsolatát, az ezt biztosító interfészeket.
+
+ 
+
+11.1. Felhasználói interfészek
+
+User Interfaces
+
+Ebben az alpontban kell leírni a felhasználói interfészre vonatkozó követelményeket. Ilyenek lehetnek például:
+
+használandó szabvány vagy kvázi-szabvány, stílus,
+a különböző felhasználói csoportok (munkakör, gyakorlottság stb. szerint) elvárásai,
+a leglényegesebb user interface elemek tervei.
+ 
+
+11.2. Hardware interfészek
+
+Hardware Interfaces
+
+Ha vannak a rendszerben speciális kezelendő hardware elemek.
+
+ 
+
+11.3. Software interfészek
+
+Software Interfaces
+
+Ha a rendszernek más rendszerekkel az üzembe helyezés után, vagy belátható időn belül majd a kapcsolatot kell tartania más rendszerekkel, itt kell megadni a kapcsolat kiépítéséhez szükséges részletességű információkat.
+
+ 
+
+11.3. Kommunikációs interfészek
+
+Communications Interfaces
+
+Ha a rendszernek valamilyen kommunikációs csatorna vagy csatornák segítségével kell kapcsolatot tartania a felhasználókkal vagy más rendszerekkel. (Például internetes, mobiltelefonos kliens stb.)
+
+ 
+
+12. Alkalmazott szabványok
+
+Applicable Standards
+
+A fejlesztés során vagy az alkalmazás készítése és üzemeltetése, használata során betartandó előírások (technikai vagy szakterületi szabványok, törvények stb.) Célszerű lehet az alábbi csoportosítás.
+
+12.1. Kötelezően alkalmazandó szabványok
+
+Mandatory Standards
+
+Valamilyen szintű előírás miatt. (Például törvényi előírás stb.)
+
+ 
+
+12.2. Választás alapján alkalmazott szabványok
+
+Optional Standars
+
+A fejlesztők vagy a felhasználók által valamilyen okból önként vállalt előírások.
+
+ 
+
+13. Mellékletek
+
+Appendix
+
+Főleg hosszabb dokumentumok esetén ide kerülhet minden olyan információ, ami a dokumentum áttekinthetőségét segíti (pl. tárgymutató, irodalomjegyzék, egyéb források megjelölése), illetve a fejlesztés egyéb, kapcsolódó dokumentumaira való hivatkozás.
+
+
+
+Vissza Kezdőlapra (A kezdőlap htmlre dobb ahol a linkek/hiperhivatkozásokból lehet választani)
+Vissza a Szótár_html-re (A szótár html fájlra dobb)
