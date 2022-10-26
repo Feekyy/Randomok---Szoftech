@@ -1,0 +1,44 @@
+<h2 class="western"><a name="31"></a>3.1. Felhasználó kinézetre vonatkozó beállítások kezelése</h2>
+<img src="uml/musorfuzet.jpg">
+<p><b>Felhasználó megjelenítése:</b><br>
+<u>Előfeltétel:</u> A főmenűben kiválasztott profil után , beállítások gomb lenyomása után , belül a profil szerkesztése menű pont gomb lenyomása <br>
+<u>Szokásos működés:</u> Profil képek kinézetének váltogatása a bal gomb , illetve jobb gombra kattintással. A kiválasztott kép után a változtatások mentése gombbal rögzíteni a kívánt kinézetet.<br>
+</p>
+
+<h2 class="western"><a name="32"></a>3.2. Játékon belüli beállítások kezelése</h2>
+<img src="uml/emlekeztetok.jpg">
+<p><u>Leírás:</u> Nehézségi fokozat váltás<br>
+<u>Szokásos működés:</u> Középen egy textbox amiben egy nehézségi szint neve és alatta egy textbox ami leírja ,hogy mit várjon a felhasználó a szinttől. Ugyanakkor ballra és jobbra egy-egy gomb ami a nehézségi szint váltást engedélyezi a felhasználó számára. Ugyanakkor egy vissza a menűbe gomb és egy beállítások mentése gomb.</p>
+
+<p><u>Leírás:</u>Hang beállítások átállítása<br>
+<u>Szokásos működés:</u>Középen több sorban elhelyezkedve egy textbox, amiben a hangerő szintet ábrázoló százalék helyezkedik el, és alatta egy textbox ami leírja ,hogy mit várjon a felhasználó a hang opciótól (főhangerő,hang effektek hangereje, utasítások/legénység hangereje, főmenű zene hangereje, játék menet közbeni zene hangereje, gombok lenyomása /interface kezelő hangok hangereje). Ugyanakkor ballra és jobbra egy-egy gomb ami a hangerő szint váltást engedélyezi a felhasználó számára , ugyanúgy minden hangopcióhoz soronként. Ugyanakkor egy vissza a menűbe gomb és egy beállítások mentése gomb. <br>
+<u>Alternatív eset:</u> Ha a beállítást nem változtatja meg akkor az elmentett vagy a default értékek fognak maradni a hangbeállításoknál.<br></p>
+
+<h2 class="western"><a name="33"></a>3.3. Játékmenet kezelése</h2>
+<img src="uml/figyelo.jpg">
+<p><u><b>Játék indítása/ Játék állás betöltése</b></u><br>
+<u>Előfeltétel:</u> Csak bejelentkezett fiók számára érhető el.<br>
+<u>Leírás:</u> A Játékos a vonatot elindítja az állomásról a billentyűzeten megadott gombokkal illetve lehet a felületen is neki kattintással növelni illetve csökkenteni a sebességet. Egérrel választ opciókat a felugró ablakokban, illetve hozz döntéseket: Lehet ez útvonal választás , újratöltése a vonatnak állomáson , utasok felvétele, veszély vagy akadály megoldása.<br>
+<br>Vereség esetén a 3 opció közül választhat egér kattintással : Újra próbálás elejéről,Újra próbálás mentéstől, Kilépés Főmenübe. A(z) "Újra próbálás elejéről" opció választással a felhasználó betölti ugyanazt a kezdő állomást , ahonnan indult a vonatja az általa előkészített legénység, rakomány, illetve utasok és egyebekkel.A(z) "Újra próbálás mentéstől" opció választással a felhasználó betölti ugyanazt a mentés, ahonnan indult a vonatja a meglévő legénység, rakomány, illetve utasok és egyebekkel. A Főmenűbe lépés gombbal vissza kerül a főmenűbe.<br>
+<br>Győzelem esetén előjön a sikeres útvonalhoz kötött jussának kiszámítása szöveg és a "Bolthoz" gomb. Majd ha ott végzett a következő útvonal kiválasztása jöhet a felhasználó számára.<br>
+<br><u>Szokásos működés:</u> Beállítások alapján megadott billentyűzeten leadott gomb nyomására indul a vonat az állomásáról el. Ezt ha a felhasználó nem adja meg Default módon jobbra nyíl. A jobbra illetve ballra nyíl segítségével a játékos növeli illetve csökkenti a vonat sebességét , ha a vonat sebességét eléggé csökkenti akkor a vonat megáll . Egér kattintással lehet a játékmenet közben felugró ablakokon opció gombra kattintva tovább haladni. Egér kattintással az útvonalak közül lehet választani a kijelölt útvonalra kattintva. A vereség illetve ,győzelem gombjait/opcióit is egér kattintással lehet kezelni.</p>
+
+<h2 class="western"><a name="34"></a>3.4. Menet indításkor Objektívumok/célok meghatározása ,elérési útvonalak megadása, útvonalak választásának kezelése</h2>
+<img src="uml/profil.jpg">
+<p><b>Vonat beállítások:</b><br>
+<u>Leírás:</u> Megjeleníti a vonat adatait és lehetőséget ad a szerkesztésükre.<br>
+<u>Szokásos működés:</u> Vonat kinézet választás gombok ballra illetve jobbra a kinézetek közti lapozás. Legénység beállítása: ha van többféle akkor a legénység sávon a gombok bekapcsolása amit használni fog a felhasználó. Üzemanyag feltöltése a vonat számára gomb benyomása. Kívánt mennyiségű utasok számát megadni a neki kínált textboxban, majd lenyomni a rögzítés gombot. Kezdeti útvonalat a térkép segítségével megadni , ugyanakkor cél állomást is megadni.<br></p>
+
+
+<h2 class="western"><a name="35"></a>3.5. Popup riasztások/Ingame döntési ablakok</h2>
+<img src="uml/naptar.jpg">
+<p><u>Leírás:</u> Megadott időközönként a vonat az idő mérés, a vonat fogyasztása megáll és felugrik egy ablak több választható opcióval és egy ábrával ellátott leírással. Az opciók közül választ a felhasználó az egérrel való kattintással. <br>
+<u>Szokásos működés:</u> Felugrott ablak textboxában tartalom , tőle jobbra vagy ballra az ábra elhelyezkedése és a szöveg alatt a lehetőségek opciói/gombjai jönnek elő. Gombok egérrel való rákattintásával a játék az alapján folytatódik , a vonat ismét megy a megállítása előtti sebességgel , az idő is és a vonat fogyasztása is folytatódik .<br>
+</p>
+
+<h2 class="western"><a name="35"></a>3.6. Bolt felület</h2>
+<img src="uml/naptar.jpg">
+<p>
+<u>Leírás:</u> Vizuálisan jeleníti meg a Bolt felületet ahol ábrákkal és leírásokkal mutatja a felhasználó számára a vásárolható opciókat. Ezeket az opciókat a kosárba rakk gombbal a termékek alatt lehet felhalmozni , amit egy jobb oldalon lévő textbox nyilvántart. Van emellett egy vásárlási lista törlése gomb ami előlről indítja a termékek felhalmozását. Majd a végén egy gomb amely segítségével a listán szereplő vásárlandó dolgokat a játékos meg is veszi. Ugyanakkor vissza a főmenűbe gomb is megjelenik itt is.<br>
+<u>Szokásos működés:</u> Gombokra való kattintás segítségével a kijelölt árucikkek vásárlása, listába rakása. Ha a játékos hibázott a vásárlásban , akkor a listát törölheti a lista törlés gombra kattintva.  Majd a lista megvásárlása gombra kattintás után a bolt felület elhagyása és a vásárolt összeg levonása a termékek hozzáadásával a vonathoz.<br>
+</p>
