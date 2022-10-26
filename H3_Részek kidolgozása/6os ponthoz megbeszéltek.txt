@@ -1,0 +1,34 @@
+6. Teljesítmény
+Performance
+
+Legalább 2x 3 sor szöveg.....
+
+
+
+Alkalmazásunk használatához szükséges gépigény :
+
+Train Tycoon 2022 System Requirements (Minimum)
+CPU: Intel Core i5 750 @ 2.6 GHz or AMD Phenom II X4 @ 3.2 GHz
+RAM: 4 GB
+OS: Windows 7 SP1 or Windows 8.1 or Windows 10 (64bit versions)
+VIDEO CARD: nVidia GeForce GTX460 or AMD Radeon HD5870 (2048MB VRAM with Shader Model 5.0)
+PIXEL SHADER: 5.0
+VERTEX SHADER: 5.0
+SOUND CARD: DirectX Compatible Sound Card with latest drivers
+FREE DISK SPACE: 10 GB
+DEDICATED VIDEO RAM: 2048 MB
+
+Internet elérés, mivel csekély méretű képek lesznek jelen, nem muszáj a nagy sávszélesség, az adatok betöltése a lényeg.
+
+Ajánlott: 
+
+Train Tycoon 2022 Recommended Requirements
+CPU: Intel Core i5 2400s @ 2.5 GHz or AMD FX 4100 @ 3.6
+RAM: 8 GB
+OS: Windows 7 SP1 or Windows 8.1 or Windows 10(64bit versions)
+VIDEO CARD: nVidia GeForce GTX 680 or AMD Radeon HD7970 or better (2048MB VRAM or more, with Shader Model 5.0)
+PIXEL SHADER: 5.0
+VERTEX SHADER: 5.0
+SOUND CARD: DirectX Compatible Sound Card with latest drivers
+FREE DISK SPACE: 10 GB
+DEDICATED VIDEO RAM: 2048 MB
