@@ -263,8 +263,29 @@ Választható kezdéshez szükséges elemek létrehozása, A Felhasználó lista
 
 <h3 align="left">4. Inkrementum</h3>
 <p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
-	játékmenet Gyorsítása, megállítása, játékos jövedelmének meghatározása, többjátékmód</font></p>
+	játékmenet Gyorsítása, megállítása, játékos jövedelmének meghatározása, többjátékmód megteremtése (websocket)</font></p>
 
+<h3 align="left">5. Inkrementum</h3>
+<p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
+	játékmenet pálya létrehozása, ellenfelek és akadályok meghatározása, vesztés esetén gombok illetve jatékmenetet megállító funkció létrehozása, nyerés esetén pályaudvar nézet előhozatala(oldal nézet a végállomásnál)
+	, útvonal lehetőségek megadása
+	</font></p>
+
+
+	<h3 align="left">6. Inkrementum</h3>
+<p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
+Irányítása a vonatnak megvalósítása, a pályán lévő objektumok/állomások/ellenfelekkel való interakció létrehozása
+
+	</font></p>
+
+	<h3 align="left">7. Inkrementum</h3>
+<p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
+Bolt létrehozása, opciók kiváltása utáni vonat fejlődés, jövedelem csökkenése vásárláskor
+	</font></p>
+		<h3 align="left">8. Inkrementum</h3>
+<p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
+Telepítés helye, Fiókok/felhasználók kezelése
+	</font></p>
 
 <h1 align="left">fejlesztési terv: </h1>
 
@@ -298,11 +319,82 @@ ezt befolyásoló játékbeli idő mutatása és az idő feljegyzése egy adatb�
 
 <h3 align="left">4. Inkrementum</h3>
 <p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
-	ahol az idő múlása befolyásolja a felhasználó jövedelmét, személyzet szállítása, mozdony sérülékenysége, szerelvényszám, vonattípus, webszerver, menü megnyitása</font></p>
+	Ahol az idő múlása befolyásolja a felhasználó jövedelmét, személyzet szállítása, mozdony sérülékenysége, szerelvényszám, vonattípus, webszerver, menü megnyitása</font></p>
+	<p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
+	A többjátékos mód Websocket felhasználásával, versengés egymás ellen opció berakása a menűbe, azon belül: többjátékos szoba generálás gomb, szobához csatlakozás gomb, a szobák 2-8 főig engednek játékost belépni, lehessen a szoba méretét szabályozni azaz minimum 2 játékosra vagy tetszés szerint egészen 8 főig lehessen emelni a férőhelyek számát, a szobában lehessen játékost a helyről kirúgni/elhagyja a szobát(szoba létrehozójának adni csak ezt a jogot), szoba chatet megoldani, szoba chat censor funkció, minden egyes játékos számára legördülő listában szerelvények, mozdony , személyzet, rakomány kiválasztása,
+ a szoba kreátora választ pályát, a szoba kreátora választ nehézséget, minden játékos számára ready gomb lerakása ami feloldja a játék indítása gombot a szoba kreátora számára, a szoba kreátora indítja a játékot egy "játék indítása" gombbal
+</font></p>
+
+
+<h3 align="left">5. Inkrementum</h3>
+<p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
+	Játék pályájának a kiválasztott pálya alapján való betöltése, vonat és a hozzá kiválasztott kezdő beállítások betöltése, útvonal létrehozása , Ellenfelek lerakása: Vonat rablók elhelyezése a pálya mentén, hegy omlás darabjai elhelyezése az útvonal mentén(ha olyan pályát választ a felhasználó/szoba kreátora), vonuló szarvasmarha/bárány/ló csorda létrehozása , feltépett sínek létrehozása , leomlott híd létrehozása végállomás illetve kezdő állomás létrehozása, feltöltő állomások létrehozása, környező települések és azokhoz vezető útvonalak/sínek lerakása, stoppoló utasok lerakása és felvétele állomásokon, felugró lehetőség a feltöltő állomáson létrehozása, a felugró lehetőségeknél lehessen választani egyet több opció közül (akár 3 opció közül) , választási opciók berakása nehézségi szintnek megfelelően (könnyű (E),közepes (M), veterán (V) szintnek megfelelően): E = 150%-os utas felvétel , rakomány választás nincs limitálva. K = 100%-os utas felvétel ,rakomány választás csak fele szerelvény számnak megfelelő mennyiség engedélyezése. V = 100%-os utas felvétel , rakomány választás csak a külön rakományra kijelölt kezdő szerelvényekre lehessen rakni rakományt (ezt csak az első pálya végig vitele utána lehessen bővíteni a boltban) ,választható útvonalak opció felhozatala egyes útvonal bizonyos pontját elérve
+</font></p>
+<p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
+Nyerés esetén:	Végállomás felület létrehozása , előugró jövedelem számító ablak létrehozása, annak bezárása gomb létrehozása, jövedelem kiszámítása a nehézségi szintnek megfelelően(E,M,V): E = csak a vonatban keletkezet kár alapján von le a jövedelemből. M = a teljesítés idejét nézve ,illetve a keletkezet kár alapján von le a jövedelemből. V = a keletkezett kár, a teljesítés ideje, és a rakomány cipelésének adott mennyiségre kiszabott vám alapján kiszámolt jövedelem összeget kapja meg a játékos. , pálya újra kezdése gomb létrehozása, végállomás felületen mentés gomb létrehozása,végállomás felületen pálya betöltés gomb létrehozása , végállomás felületen bolt gomb létrehozása , kilépés gomb létrehozása, kilépés a menübe gomb létrehozása
+</font></p>
+<p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
+Vesztés esetén: GAME OVER felület létrehozása, Pálya előlről kezdése gomb létrehozása, Pálya betöltése gomb létrehozása, kilépés gomb létrehozása, kilépés a menübe gomb létrehozása
+</font></p>
+
+
+
+
+
+<h3 align="left">6. Inkrementum</h3>
+<p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
+Irányítása a vonatnak megvalósítása egérrel való opciók kiválasztása(útvonal kiválasztása, esemény feljövetelekor bizonyos opciók besatírozása (ezáltal is korlátozni a játékost ,ha nincs meg a megfelelő felszerelése az eseményhez),többi opcióra kattintva esemény lekezelése, következmények végbehajtása a felhasználóval szemben), a pályán lévő objektumok/állomások/ellenfelekkel való interakció az esemény felugró ablak segítségével.
+</font></p>
+<p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
+A vonat írányítása amíg nem ugranak fel ablakok ,addig billentyűzet segítségével halad a vonat a kitűzött végállomása felé.
+</font></p>
+<p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
+
+</font></p>
+
+
+
+<h3 align="left">7. Inkrementum</h3>
+<p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
+Boltba való belépés opció felhozatala nyerést követően, a bolt több oldalas létrehozása (gombokkal lehessen lapozni a katalógusban), vásárolható termékek felsorolása és leírás készítése hozzájuk illetve gombok segítségével a termék megvásárlása ,ezáltal a vonat fejlesztése és a jövedelemből való pénz levétele sikeres termék vásárlása esetén. 
+</font></p>
+<p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
+Felugró ablak minden egyes vásárlás esetén , arról ,hogy biztos -e a felhasználó a termék megvásárlásában.
+</font></p>
+<p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
+
+</font></p>
+
+
+
+<h3 align="left">8. Inkrementum</h3>
+<p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
+Telepítés előtt ellenőrzése ,hogy van -e megfelelő hardver a gépen a program futtatásához.
+</font></p>
+<p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
+Telepítés illetve mentés mappájának kijelölése és oda rakása a fájloknak. Ha a kijelölt hely nem rendelkezik elegendő hellyel a felrakni kívánt fájloknak akkor felugró ablakkal értesítse a felhasználót illetve ne engedje a telepítést tovább menni amíg nincs kiválasztva egy megfelelő vagy a kívánt mérettől nagyobb tárhely.
+</font></p>
+<p style="margin-bottom: 0cm;" align="left" lang="hu-HU"><font size="3">
+
+</font></p>
 
 	<h1 align="left"> bemutatás: 12. hét, pendrive</h1>
 <h1 align="left"> információ: https://users.iit.uni-miskolc.hu/~mileff/  </h1>
 <h1 align="left"> dokumentumok: Bemutató, projektterv, munkalap</h1>
+
+
+
+<br>
+
+<p  style="margin-bottom: 0cm; text-align: left;"><a href="szotar.html"><big><font size="6"> Szótár</big></a></p>
+
+<p  style="margin-bottom: 0cm; text-align: left;"><a href="h2.html"><big><font size="6"> H2</big></a></p>
+
+<p  style="margin-bottom: 0cm; text-align: left;"><a href="h3.html"><big><font size="6"> H3</big></a></p>
+
+<p  style="margin-bottom: 0cm; text-align: left;"><a href="kezdolap.html"><big><font size="6"> Kezdőlapra</big></a></p>
+
+<p  style="margin-bottom: 0cm; text-align: left;"><a href="munkanaplok.html"><big><font size="6"> Választás Munkanaplók között</big></a></p>
 
 </body>
 </html>
