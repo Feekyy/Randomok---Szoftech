@@ -425,8 +425,8 @@ rendszer funkciói</h1>
 
 <p><font face="Arial, sans-serif">Specific Requirements</font></p>
 <p>&nbsp;</p>
-<img src="MENU.png" width="1500" 
-     height="900">
+<img src="MENU.png" width="1100" 
+     height="600">
 
 <p><b>Felhasználó/Játékos: </b>A terméknek/játéknak add elvégzendő parancsokat, ami alapján a szoftver alkamlmazkodik/végre hajtja az utasításokat. Beviteli eszközei lehetnek a különböző gomb lenyomásra billentyűzeten, illetve egér mutató gombokra húzása utáni kattintással.</p>
 <p>Vannak adatbázisban letárolt fiókjai/mentései illetve profilja a felhasználónak. A profilt beállíthatja többjátékos módhoz.</p>
@@ -490,15 +490,19 @@ egy ábrát és egy leírást ami felhívja a játékos figyelmét az éppen tö
 <u>Szokásos működés:</u>Középen több sorban elhelyezkedve egy textbox, amiben a hangerő szintet ábrázoló százalék helyezkedik el, és alatta egy textbox ami leírja ,hogy mit várjon a felhasználó a hang opciótól (főhangerő,hang effektek hangereje, utasítások/legénység hangereje, főmenű zene hangereje, játék menet közbeni zene hangereje, gombok lenyomása /interface kezelő hangok hangereje). Ugyanakkor ballra és jobbra egy-egy gomb ami a hangerő szint váltást engedélyezi a felhasználó számára , ugyanúgy minden hangopcióhoz soronként. Ugyanakkor egy vissza a menűbe gomb és egy beállítások mentése gomb. <br>
 <u>Alternatív eset:</u> Ha a beállítást nem változtatja meg akkor az elmentett vagy a default értékek fognak maradni a hangbeállításoknál.<br></p>
 
+
+<p><u>Leírás:</u> Kép méret beállítása:<br><u>Szokásos működés:</u>az ablak nagyságát tudja a játékos változtatni, választhat ablakos illetve full screen módok közül is.</p>
+
+
 <h2 class="western"><a name="33"></a>3.3. Játékmenet kezelése</h2>
 <br>
-<img src="Singlep1.png" width="1500" 
-     height="900">
+<img src="Singlep1.png" width="1100" 
+     height="600">
 <br>
 
 <br>
-<img src="Singlep2.png" width="1500" 
-     height="900">
+<img src="Singlep2.png" width="1100" 
+     height="600">
 <br>
 <p><u><b>Játék indítása/ Játék állás betöltése</b></u><br>
 <u>Előfeltétel:</u> Csak bejelentkezett fiók számára érhető el.<br>
@@ -522,13 +526,45 @@ egy ábrát és egy leírást ami felhívja a játékos figyelmét az éppen tö
 
 <h2 class="western"><a name="35"></a>3.6. Bolt felület</h2>
 <br>
-<img src="Shop_draft.png" width="1500" 
-     height="900">
+<img src="Shop_draft.png" width="1100" 
+     height="600">
 <br>
 <p>
 <u>Leírás:</u> Vizuálisan jeleníti meg a Bolt felületet ahol ábrákkal és leírásokkal mutatja a felhasználó számára a vásárolható opciókat. Ezeket az opciókat a kosárba rakk gombbal a termékek alatt lehet felhalmozni , amit egy jobb oldalon lévő textbox nyilvántart. Van emellett egy vásárlási lista törlése gomb ami előlről indítja a termékek felhalmozását. Majd a végén egy gomb amely segítségével a listán szereplő vásárlandó dolgokat a játékos meg is veszi. Ugyanakkor vissza a főmenűbe gomb is megjelenik itt is.<br>
 <u>Szokásos működés:</u> Gombokra való kattintás segítségével a kijelölt árucikkek vásárlása, listába rakása. Ha a játékos hibázott a vásárlásban , akkor a listát törölheti a lista törlés gombra kattintva.  Majd a lista megvásárlása gombra kattintás után a bolt felület elhagyása és a vásárolt összeg levonása a termékek hozzáadásával a vonathoz.<br>
 </p>
+
+
+<h2 class="western"><a name="35"></a>3.7. Pályák</h2>
+<br>
+
+<br>
+<p>
+<u>Leírás:</u>Pályák mint Gomb<br>Ez a része a játéknak ugyanúgy Egyszemélyes és Többjátékos játékmódban is elérhető. Vizuálisan jeleníti meg a Pálya választó felületet ahol ábrákkal és leírásokkal mutatja a felhasználó számára a választható opciókat(Kezdetben 16 pálya lesz elérhető és ugyanúgy 16 lesz feloldható). Ezeket az opciókat az Egyszemélyes játék során feloldhatja (minden alap pálya végigjátszása győzelem eredménnyel eredményezzi az összes feloldását)<br> 
+</p>
+<p>
+<u>Leírás:</u>Pályák mint játékbeli egység<br>
+<u>Szokásos működés:</u>Egy pálya a nehézségi szinttől függően tartalmazhat akadályokat: <br>
+<p align="center">könnyű	=	6-8 esemény felugró ablak</p>
+<p align="center">közepes	=	8-9 esemény felugró ablak</p>
+<p align="center">nehéz		=	9-10 esemény felugró ablak</p>
+<p align="center">veterán	=	10-12 esemény felugró ablak</p>
+<br>
+Ezek a felugró ablakok tartalmazhatnak akadályokat amiből 44 féle(legalább 6 féle rejtett)  különböző akadály lesz. A 44 közül lesznek olyan akadályok amikhez a játékosnak szükséges lesz bizonyos időt töltenie egyhelyben. Ebből lesz 20 féle. Lesznek olyan akadályok amik a vonatban tesznek kárt . Ebből lesz 8 féle. Lehetlesz az utasok védelmét biztosítani a boltból vásárolt felszerelésekkel , ugyanakkor ha a vonat nem rendelkezik ezzel a lehetőséggel akkor az 5 alkalommal amikor az utasok a felugró ablak által jött akadály során vagy kevesebben lesznek vagy pedig kárpótólni kellesz őket a vonat végállomásán a jövedelemből.
+<br>
+Lesznek útválasztó lehetőségek mint felugró ablakok ebből is vagy 9 féle lesz elérhető. Ezeknél bizonyos mennyiségű szenet elhasznál pluszba vagy éppen az ,hogy ha marad a másikon akkor tartalékol szenet.A fennmaradóban lesznek még olyan felugró ablakok is amik híres személyektől kapott adományt adhat a jövedelemhez.
+<br>
+<br>
+Minden egyes felugró ablakot a neki megfelelő pályához rendelünk és minden menet legalább tartalmazni fog 4 rossz eseményt ahol a játékosnak választania kellesz ,hogy hogyan oldja meg a gondot. Ugyanakkor garantált 3 útválasztási felugró ablak is lesz és a kialakult maradékban lehet híres emberrel találkozni a mozdonyon ,illetve rejtett felugró ablakok amik vagy valamilyen felszerelést adnak a boltból vagy pedig jövedelemmel gazdagítják a játékost.
+</p>
+ <p>Még a végállomás előtt lesznek feltöltő állomások:<br>
+ Ezeken a helyeken a szén raktár teljesen feltöltődik. Az utasok száma változik a fel és leszállók számával ezáltal plusz jövedelem pontokat kap a játékos a végállomásra érve.<br>
+ Ugyanakkor a játékos időt is tölthet itt ,hogy javítsa az út közben jött károk okozta sérüléseket a vonaton.</p>
+
+<h2 class="western"><a name="35"></a>3.8. Jövedelem számítás</h2>
+
+ <p>A játékos egy végállomásig ment menet után kap fizetést:<br>
+ Ebben a fizetésben benne van a károk kelletkezte javítások ára , utasok kárpótlása, hírességektől kapott jutalom, vesztegelt idő, felhasznált szén és nehézségi szintnek megfelelő újabb tételek.<br></p>
 
 <h1 class="western"><a name="4"></a>4.
   Használhatóság</h1>
