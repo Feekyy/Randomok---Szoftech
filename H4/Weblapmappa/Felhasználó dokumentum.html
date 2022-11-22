@@ -45,7 +45,7 @@ c&iacute;me: Vonat menedzselős jaték</font></p>
 <p style="margin-bottom: 0cm;" align="center"><br>
 </p>
 
-<p style="margin-bottom: 0cm;" align="center" lang="hu-HU"><font style="font-size: 26pt;" size="6"><b><span lang="en-US">Felhasználó Dokumentum html</span></b></font></p>
+<p style="margin-bottom: 0cm;" align="center" lang="hu-HU"><font style="font-size: 26pt;" size="6"><b><span lang="en-US">Felhasználó Dokumentum htmlV1</span></b></font></p>
 
 <p style="margin-bottom: 0cm;" align="center"><br>
 </p>
@@ -189,6 +189,9 @@ felhasznaló funkciói
 </a></p>
 <p style="margin-bottom: 0cm;"><a href="#3.2">3.2 Játékok közti keresés(Többjátékosmód/MultiPlayer)
 </a></p>
+<p style="margin-bottom: 0cm;"><a href="#3.3">3.3 Pontszámok megtekintése
+</a></p>
+
 <p style="margin-bottom: 0cm;"><a href="#4">4. Felhasználó jogai
 </a></p>
 <p style="margin-bottom: 0cm;"><a href="#5">5. Erőforrás igények
@@ -204,8 +207,10 @@ felhasznaló funkciói
   
   <p align="CENTER"><b>Vonatos játékunk célja, hogy menedzsmenttel teljesítsünk küldetéseket adott pályákon.</b>
   <br><b> A felhasználó kedve szerint csinálhat egy vonat vállalkozást. </b></p>
-  
-  
+  <p align="CENTER"><b>Játékunk fő célja, hogy a
+felhasználó belelásson abba, hogy mivel jár
+egy vonat, és/vagy vállalat menedzselése.</b></p>      
+      <p align="CENTER"><b>Továbbá az ezen keresztüli ismeretterjesztés, és készségfejlesztés.</b></p>
   <h1 class="western"><a name="1.1"></a>1A. Felhasználói felület</h1>
 <p><font face="Arial, sans-serif">Overview</font></p>
 
@@ -248,7 +253,7 @@ felhasznaló funkciói
  <p style="text-align:center;"> <img  src="Fdoksi/maket2.png" width="880" 
      height="600"></p>
 <p><b>SinglePlayer </b></p>
-<p>
+<p>Az egyszemélyes játékmód alapján működik a többszemélyes játékmód, ugyanakkor itt a többszemélyes játékmóddal ellentétben a játékos egy futam után kap jutalmat amit a játék bolt szekciójában költhet el . Pontszámját csakis akkor kapja meg a játékos miután a játék singleplayer módjának sztorija végére ért. A boltból vett eszközök , alkalmazottak és egyebek segítik a vonat könnyedebb működését és akadályainak leküzdését. Ha mindezek ellenére is kifogy az üzemanyagból vagy netán túl sokszor sérült a vonat , akkor sincs baj mivel a játékosnak feljön a lehetőség ,hogy előlről kezdje a pályát vagy pedig a főmenűben a mentett állásokra kattintva az elmentett menetet ott folytathassa ahol elmentette/szeretné.
 <br>
   <br>
 <br>
@@ -257,7 +262,8 @@ felhasznaló funkciói
 
 <p><b>MultiPlayer</b></p>
 
-<p>
+<p>A többjátékos mód Websocket felhasználásával, versengés egymás ellen opció berakása a menűbe, azon belül: többjátékos szoba generálás gomb, szobához csatlakozás gomb, a szobák 2-8 főig engednek játékost belépni, lehessen a szoba méretét szabályozni azaz minimum 2 játékosra vagy tetszés szerint egészen 8 főig lehessen emelni a férőhelyek számát, a szobában lehessen játékost a helyről kirúgni/elhagyja a szobát(szoba létrehozójának adni csak ezt a jogot), szoba chatet megoldani, szoba chat censor funkció, minden egyes játékos számára legördülő listában szerelvények, mozdony , személyzet, rakomány kiválasztása,
+ a szoba kreátora választ pályát, a szoba kreátora választ nehézséget, minden játékos számára ready gomb lerakása ami feloldja a játék indítása gombot a szoba kreátora számára, a szoba kreátora indítja a játékot egy "játék indítása" gombbal.
 <br>
   <br></p>
 
@@ -314,7 +320,7 @@ felhasznaló funkciói
 <u>Amennyiben bármilyen jellegű probléma , bug, glitch , játék megállást tapasztal a játék a játékos számára egy felugró ablak segítségével biztosítjuk a gyors visszajelzés lehetőségét a külön textboxban való hiba részletezésével és a "Send Bug Report" gombbal.<br>
 </u> <br>
 <u><b>Online fórumunkon</b></u><br>
-<br>
+<br>A Facebook oldalunkon és a játékunk weboldalán lévő fórumokon lehet kérdéseket feltenni , illetve a problémákat feltüntetni . Ezeket vagy a csapatunk vagy a játékot használó többi játékos meg tudja ezeken a weboldalakon válaszolni. A gyakran kérdezet kérdésekre a weblapunkon a fórum szekcióban lesz egy link ami elvezeti a játékost a gyakran kérdezet kérdések oldalunkhoz , ahol el lesz magyarázva különböző kérdésekre a válasz illetve problémák megoldásának a menete.
 <br><u></u></p>
 
 <h2 class="western"><a  name="3.2"></a>3.2 Játékok közti keresés(Többjátékosmód/MultiPlayer)</h2>
@@ -333,9 +339,7 @@ felhasznaló funkciói
 <br><br>
 <u>Create Room/Szoba létrehozás</u> <br>A többjátékos mód elindítása a többjátékos menű gombon keresztül előhozz 2 menű opciót ami alapján a játékos választhat 1 opciót. Az egyik ilyen opció adja a lehetőséget ,hogy a játékos létrehozzon egy játék szobát a "Szoba létrehozása" gombbal, majd a létrehozott szoba a szobát keresőknek a "Szoba listájában" megjelenik és a beállításoknak megfelelően engedi a szoba létrehozója a szobájára való csatlakozást. Ez lehet jelszavazat szoba ahova kell egy jelszót megadnia a szoba létrehozójának és a szobára csatlakozóknak ezentúl muszály lesz a szoba elérése érdekében a jelszavat megadni. Ugyanakkor ,ha nem adja meg a Jelszót a szoba létrehozója akkor nem ugrik fel a rá csatlakozóknak a jelszó beírása követelmény . Ekkor bárki rácsatlakozhat a szobára amit létrehoztak. Ugyanakkor a szoba létrehozója és a többi játékos aki a szobára csatlakozott a futam beállítások megadása után kell nyomniuk egy ready gombot a futam indításához.<br>
 
-<br><br>
-<br><br>
-<br><u>Alcím</u></p>
+
 
 
 <h2 class="western"><a  name="3.3"></a>3.3 Pontszámok megtekintése </h2>
@@ -345,7 +349,11 @@ felhasznaló funkciói
 
 
 <u>Online</u> <br>
-<u>Offline</u> <br><br>
+Adatbázisunkban külön eltárolva.
+<br>
+<u>Offline</u> <br>
+Külön mappában elrendezve dátum alapján mint név.
+<br>
 <br><br>
 <br><br>
 
