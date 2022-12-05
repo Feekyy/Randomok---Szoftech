@@ -76,21 +76,14 @@ tagok:</font></p>
     <tr valign="top">
 		<td width="118">
       
-      
-      
       <p align="left" lang="hu-HU"><font size="3">Nagy Bence</font></p>
 		</td>
 		<td width="75">
-		 
-      
-      
 
       <p align="left" lang="hu-HU"><font size="3">FVIQLY</font></p>
 		</td>
 		<td width="264">
-			 
-      
-      
+			     
       
       <p align="left" lang="hu-HU"><font size="3">nbence0620@gmail.com</font></p>
 		</td>
@@ -99,23 +92,15 @@ tagok:</font></p>
 		<td width="118">			      
       
       
-      
       <p align="left" lang="hu-HU"><font size="3">Istv&aacute;n Kal&oacute;</font></p>
 		</td>
 		<td width="75">
 			
 
-      
-      
-      
       <p align="left" lang="hu-HU"><font size="3">T59MGG</font></p>
 		</td>
 		<td width="264">
-			
-      
-      
-      
-    
+
       <p align="left" lang="hu-HU"><font size="3"> - </font></p>
 		</td>
 	</tr>
@@ -582,7 +567,7 @@ GameController</p>
 
 		
 <p>
-<b>képernyő</b><br>
+<b>SCREEN</b><br>
 <u>menu</u> <br>
 	
 <ul>
@@ -602,7 +587,7 @@ GameController</p>
 	</ul></p></li>
 
  		<p><b>
-felhasználó</b></p>
+USER</b></p>
 	<p>name</p>
 	<p>regist date</p>
 	<p>last visit date</p>
@@ -611,22 +596,22 @@ felhasználó</b></p>
 		<p>locatio</p>
 		<p>date</p>
 	
-<p><b>Hang</b></p>
+<p><b>SOUND</b></p>
 	<p>event</p>
 	<p>location</p>
 		
 <p><b>
-Kapcsolat felvevő</b></p>
+CONNECTION ESTABILISHER</b></p>
 	<p>server</p>
 	<p>points</p>
 	<p>players</p>
 	<p>ranks
 </p>
-<p><b>Időmérő</b></p>
+<p><b>TIMER</b></p>
 	<p>time</p>
 		<p>penalty</p>
 
-<p><b>Esemény kezelő</b></p>
+<p><b>EVENT HANDLER</b></p>
 	<p>pop up</p>
 		<p>location</p>
 		<p>sound</p>
@@ -636,7 +621,7 @@ Kapcsolat felvevő</b></p>
 	<p>border</p>
 	<p>time stop</p>	
 	
-<p><b>Bemeneti</b></p>
+<p><b>INPUT</b></p>
 	<p>type</p>
 		<p>mouse movement</p>
 		<p>click</p>
@@ -645,16 +630,16 @@ Kapcsolat felvevő</b></p>
 		<p>elapsed time</p>
 		
 
-<p><b>Koordináta</b></p>
+<p><b>COORDINATES</b></p>
 	<p>X</p>
 	<p>Y</p>
-<p><b>Képmegjelenítés</b></p>
+<p><b>SCREEN DISPLAY</b></p>
 	<p>path</p>
 	<p>switch</p>
 	<p>animations</p>
 	
 	
-<p><b>Animációk</b></p>
+<p><b>ANIMATIONS</b></p>
 	<p>timer</p>
 		<p>begin</p>
 		<p>end</p>
@@ -665,7 +650,7 @@ Kapcsolat felvevő</b></p>
 	<p>type</p>
 	<p>screen switch</p>
 <p><b>
-Játékvezérlő</b></p>
+GAME HANDLER</b></p>
 	<p>fuel</p>
 		<p>type</p>
 		<p>amount</p>
@@ -697,19 +682,953 @@ modell</H1>
 <H1 CLASS="western">3.1.2 Attribútumok azonosítása</H1>
 <P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.64cm; margin-bottom: 0.35cm">
 
+<p><b>Player</b></p>
+
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="118">
+	<col width="75">
+	<col width="264">
+	<tbody>
+    <tr valign="top">
+		<td width="118">
+      
+      <p align="left" lang="hu-HU"><font size="3">Name</font></p>
+		</td>
+		<td width="75">
+
+      <p align="left" lang="hu-HU"><font size="3">Type</font></p>
+		</td>
+		<td width="264">
+			     
+      
+      <p align="left" lang="hu-HU"><font size="3">Description</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">Animations_IMGs</font></p>
+		</td>
+		<td width="75">
+			
+
+      <p align="left" lang="hu-HU"><font size="3">BUFFERED_IMAGE[][]</font></p>
+		</td>
+		<td width="264">
+
+      <p align="left" lang="hu-HU"><font size="3">The/This array contains the pictures of the animations </font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">Moving</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">BOOLEAN</font></p>
+		</td>
+		<td width="264">
+      <p align="left" lang="hu-HU"><font size="3">True if it moves, False if it is stationary</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">LVLDATA</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">INT[][]</font></p>
+		</td>
+		<td width="264">    
+      
+      <p align="left" lang="hu-HU"><font size="3">This/The array contains the data of the level </font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">X_DRAW_OFFSET</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">FLOAT</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">The character's x coordinates</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">Y_DRAW_OFFSET</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">FLOAT</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">The character's y coordinates</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">Moving_Speed</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">FLOAT</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">Contains the speed which the Train object moves</font></p>
+		</td>
+	</tr>
+  </tbody>
+</table>
+
+<p><b>ACHIEVEMENT</b></p>
+
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="118">
+	<col width="75">
+	<col width="264">
+	<tbody>
+    <tr valign="top">
+		<td width="118">
+      
+      <p align="left" lang="hu-HU"><font size="3">NAME</font></p>
+		</td>
+		<td width="75">
+
+      <p align="left" lang="hu-HU"><font size="3">TYPE</font></p>
+		</td>
+		<td width="264">
+			     
+      
+      <p align="left" lang="hu-HU"><font size="3">DESCRIPTION</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">ACHIEVEMENT_ID</font></p>
+		</td>
+		<td width="75">
+			
+
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">
+
+      <p align="left" lang="hu-HU"><font size="3">Contains the id of the achievement </font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">REWARD</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">BOOLEAN</font></p>
+		</td>
+		<td width="264">
+      <p align="left" lang="hu-HU"><font size="3">True if the requirements for the reward are met , False if the requirements for the reward are not met</font></p>
+		</td>
+	</tr>
+  </tbody>
+</table>
+
+<p><b>Train</b></p>
+
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="118">
+	<col width="75">
+	<col width="264">
+	<tbody>
+    <tr valign="top">
+		<td width="118">
+      
+      <p align="left" lang="hu-HU"><font size="3">NAME</font></p>
+		</td>
+		<td width="75">
+
+      <p align="left" lang="hu-HU"><font size="3">TYPE</font></p>
+		</td>
+		<td width="264">
+			     
+      
+      <p align="left" lang="hu-HU"><font size="3">DESCRIPTION</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">Animation_ID</font></p>
+		</td>
+		<td width="75">
+			
+
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">
+
+      <p align="left" lang="hu-HU"><font size="3">Animation's ID </font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">TRAIN_TYPE</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">
+      <p align="left" lang="hu-HU"><font size="3">Contains the type of the Train</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">FIRST_UPDATE</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">BOOLEAN</font></p>
+		</td>
+		<td width="264">    
+      
+      <p align="left" lang="hu-HU"><font size="3">Starts off as true changes to false if there was an update </font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">ACTIVE</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">BOOLEAN</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">TRUE IF ACTIVE, False if not</font></p>
+		</td>
+	</tr>
+  </tbody>
+</table>
+
+<p><b>GObject</b></p>
+
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="118">
+	<col width="75">
+	<col width="264">
+	<tbody>
+    <tr valign="top">
+		<td width="118">
+      
+      <p align="left" lang="hu-HU"><font size="3">NAME</font></p>
+		</td>
+		<td width="75">
+
+      <p align="left" lang="hu-HU"><font size="3">TYPE</font></p>
+		</td>
+		<td width="264">
+			     
+      
+      <p align="left" lang="hu-HU"><font size="3">DESCRIPTION</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">doAnimation</font></p>
+		</td>
+		<td width="75">
+			
+
+      <p align="left" lang="hu-HU"><font size="3">BOOLEAN</font></p>
+		</td>
+		<td width="264">
+
+      <p align="left" lang="hu-HU"><font size="3"> True if animation needed , else false</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">ANIMATION_TICK</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">
+      <p align="left" lang="hu-HU"><font size="3">It gives the Animation's frames per second number</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">Animation_INDEX</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">    
+      
+      <p align="left" lang="hu-HU"><font size="3">Gives the animation's index back </font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">X_DRAW_OFFSET</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">float</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">The character's x coordinates</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">Y_DRAW_OFFSET</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">float</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">The character's y coordinates</font></p>
+		</td>
+	</tr>
+	
+      
+  </tbody>
+</table>
 
 
-<P LANG="" CLASS="western" STYLE="margin-bottom: 0.35cm"><IMG SRC="A.png" NAME="kép10.2" ALIGN=BOTTOM WIDTH=500 HEIGHT=500 BORDER=0></P>
-<P LANG="" CLASS="western" STYLE="margin-bottom: 0.35cm"><IMG SRC="B.png" NAME="kép10" ALIGN=BOTTOM WIDTH=500 HEIGHT=500 BORDER=0></P>
-<P LANG="" CLASS="western" STYLE="margin-bottom: 0.35cm"><IMG SRC="C.png" NAME="kép10.1" ALIGN=BOTTOM WIDTH=500 HEIGHT=500 BORDER=0></P>
-<P LANG="" CLASS="western" STYLE="margin-bottom: 0.35cm"><IMG SRC="D.png" NAME="kép10.2" ALIGN=BOTTOM WIDTH=500 HEIGHT=500 BORDER=0></P>
-<P LANG="" CLASS="western" STYLE="margin-bottom: 0.35cm"><IMG SRC="E.png" NAME="kép10.2" ALIGN=BOTTOM WIDTH=500 HEIGHT=500 BORDER=0></P>
-<P LANG="" CLASS="western" STYLE="margin-bottom: 0.35cm"><IMG SRC="F.png" NAME="kép10" ALIGN=BOTTOM WIDTH=500 HEIGHT=500 BORDER=0></P>
-<P LANG="" CLASS="western" STYLE="margin-bottom: 0.35cm"><IMG SRC="G.png" NAME="kép10.1" ALIGN=BOTTOM WIDTH=500 HEIGHT=500 BORDER=0></P>
-<P LANG="" CLASS="western" STYLE="margin-bottom: 0.35cm"><IMG SRC="H.png" NAME="kép10.2" ALIGN=BOTTOM WIDTH=500 HEIGHT=500 BORDER=0></P>
-<P LANG="" CLASS="western" STYLE="margin-bottom: 0.35cm"><IMG SRC="I.png" NAME="kép10.2" ALIGN=BOTTOM WIDTH=500 HEIGHT=500 BORDER=0></P>
+<p><b>SKIN</b></p>
+
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="118">
+	<col width="75">
+	<col width="264">
+	<tbody>
+    <tr valign="top">
+		<td width="118">
+      
+      <p align="left" lang="hu-HU"><font size="3">NAME</font></p>
+		</td>
+		<td width="75">
+
+      <p align="left" lang="hu-HU"><font size="3">TYPE</font></p>
+		</td>
+		<td width="264">
+			     
+      
+      <p align="left" lang="hu-HU"><font size="3">DESCRIPTION</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">SKIN_TYPE</font></p>
+		</td>
+		<td width="75">
+			
+
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">
+
+      <p align="left" lang="hu-HU"><font size="3"> Gives the tpye of skin</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">First_Update</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">BOOLEAN</font></p>
+		</td>
+		<td width="264">
+      <p align="left" lang="hu-HU"><font size="3">First it is true, then if it gets update false</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">SKIN_ID</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">    
+      
+      <p align="left" lang="hu-HU"><font size="3">Contains the Skin's ID </font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">ACTIVE</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">BOOLEAN</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">True if it is ACTIVE, False if it is not ACTIVE</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">SKIN_PRICE</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">Gives the Price of The Skin</font></p>
+		</td>
+	</tr>
+
+  </tbody>
+</table>
 
 
+
+
+<p><b>MAP</b></p>
+
+
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="118">
+	<col width="75">
+	<col width="264">
+	<tbody>
+    <tr valign="top">
+		<td width="118">
+      
+      <p align="left" lang="hu-HU"><font size="3">NAME</font></p>
+		</td>
+		<td width="75">
+
+      <p align="left" lang="hu-HU"><font size="3">TYPE</font></p>
+		</td>
+		<td width="264">
+			     
+      
+      <p align="left" lang="hu-HU"><font size="3">DESCRIPTION</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">MAP_TYPE</font></p>
+		</td>
+		<td width="75">
+			
+
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">
+
+      <p align="left" lang="hu-HU"><font size="3">It states the type of the map </font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">MAP_UPDATE</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">BOOLEAN</font></p>
+		</td>
+		<td width="264">
+      <p align="left" lang="hu-HU"><font size="3">It comes as True ,then if it changes it becomes false</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">MAP_ID</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">    
+      
+      <p align="left" lang="hu-HU"><font size="3">The Map's ID </font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">ACTIVE</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">BOOLEAN</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">True if it is ACTIVE, False if it is not true</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">MAP_LVL</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">Gives the maps Lvl attribute</font></p>
+		</td>
+	</tr>
+	
+   
+  </tbody>
+</table>
+
+
+
+<p><b>MENU</b></p>
+
+
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="118">
+	<col width="75">
+	<col width="264">
+	<tbody>
+    <tr valign="top">
+		<td width="118">
+      
+      <p align="left" lang="hu-HU"><font size="3">NAME</font></p>
+		</td>
+		<td width="75">
+
+      <p align="left" lang="hu-HU"><font size="3">TYPE</font></p>
+		</td>
+		<td width="264">
+			     
+      
+      <p align="left" lang="hu-HU"><font size="3">DESCRIPTION</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">BACKGROUND_IMG</font></p>
+		</td>
+		<td width="75">
+			
+
+      <p align="left" lang="hu-HU"><font size="3">BUFFERED_IMAGE</font></p>
+		</td>
+		<td width="264">
+
+      <p align="left" lang="hu-HU"><font size="3"> The Background</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">MMX</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">
+      <p align="left" lang="hu-HU"><font size="3">MENU'S X Coordinate on screen</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">MMY</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">    
+      
+      <p align="left" lang="hu-HU"><font size="3">MENU'S Y Coordinate on screen  </font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">MMW</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">THE WIDTH OF THE MENU</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">MMH</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">THE HEIGHT OF THE MENU</font></p>
+		</td>
+	</tr>
+  </tbody>
+</table>
+
+
+
+<p><b>Setting</b></p>
+
+
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="118">
+	<col width="75">
+	<col width="264">
+	<tbody>
+    <tr valign="top">
+		<td width="118">
+      
+      <p align="left" lang="hu-HU"><font size="3">NAME</font></p>
+		</td>
+		<td width="75">
+
+      <p align="left" lang="hu-HU"><font size="3">TYPE</font></p>
+		</td>
+		<td width="264">
+			     
+      
+      <p align="left" lang="hu-HU"><font size="3">DESCRIPTION</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">BACKGROUND_IMG</font></p>
+		</td>
+		<td width="75">
+			
+
+      <p align="left" lang="hu-HU"><font size="3">BUFFERED_IMAGE</font></p>
+		</td>
+		<td width="264">
+
+      <p align="left" lang="hu-HU"><font size="3">THE BACKGROUND IMAGE </font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">SMX</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">
+      <p align="left" lang="hu-HU"><font size="3">The setting menu's x coordinate on the screen</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">SMY</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">    
+      
+      <p align="left" lang="hu-HU"><font size="3">The setting menu's y coordinate on the screen </font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">SMW</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">The Setting's width</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">SMH</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">The Setting's height</font></p>
+		</td>
+	</tr>
+  </tbody>
+</table>
+
+
+
+
+<p><b>GAME</b></p>
+
+
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="118">
+	<col width="75">
+	<col width="264">
+	<tbody>
+    <tr valign="top">
+		<td width="118">
+      
+      <p align="left" lang="hu-HU"><font size="3">NAME</font></p>
+		</td>
+		<td width="75">
+
+      <p align="left" lang="hu-HU"><font size="3">TYPE</font></p>
+		</td>
+		<td width="264">
+			     
+      
+      <p align="left" lang="hu-HU"><font size="3">DESCRIPTION</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">GAME_THREAD</font></p>
+		</td>
+		<td width="75">
+			
+
+      <p align="left" lang="hu-HU"><font size="3">THREAD</font></p>
+		</td>
+		<td width="264">
+
+      <p align="left" lang="hu-HU"><font size="3">SETS HOW MANY THREAD WILL USE THE GAME </font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">FPS_SET</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">INT</font></p>
+		</td>
+		<td width="264">
+      <p align="left" lang="hu-HU"><font size="3">SETS FPS FOR THE GAME</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">FPS_LIMIT</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">BOOLEAN</font></p>
+		</td>
+		<td width="264">    
+      
+      <p align="left" lang="hu-HU"><font size="3">THIS IS A FUNCTION THAT CAN BE TURNED ON OR OFF, IFF THE USER DESIRES TO LIMIT THE FPS </font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">MENU</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">MENU</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">MENU OBJECT</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">GAME_OPTIONS</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">GAME_OPTIONS</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">OPTIONS OBJECT</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">SHOW_FPS_UPS</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">BOOLEAN</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">FUNCTION THAT ALLOWS TO SHOW THE FPS WINDOW OR CLOSE IT</font></p>
+		</td>
+	</tr>
+
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">CREDITS</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">CREDITS</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">CREDITS OBJECT</font></p>
+		</td>
+	</tr>
+
+	<tr valign="top">
+		<td width="118">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">Playing</font></p>
+		</td>
+		<td width="75">
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">PLAYING</font></p>
+		</td>
+		<td width="264">
+			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">PLAYING OBJECT , that switches the users status to playing</font></p>
+		</td>
+	</tr>
+
+  </tbody>
+</table>
 
 <H1 CLASS="western"><A NAME="_3.1.3_B%C3%A1zisoszt%C3%A1lyok%3A"></A>3.1.3
 Bázisosztályok:<BR><BR><BR>
