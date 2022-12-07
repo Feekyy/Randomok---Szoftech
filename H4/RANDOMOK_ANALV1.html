@@ -498,61 +498,61 @@ GameController</p>
 </H1>
 
 	
-	<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>1) Főosztály:
+	<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>1) Game_Controller:
     
 </B>Alrendszerkezelő</P>
-<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>2) képernyő:
+<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>2) Display:
 </B>Mindent tartalmaz amit a képernyőn megjelenítünk ehhez
    <li> a) felhasználói felület: Azon komponensek számára amiken keresztül a felhasználók bemenetet küldhetnek
         megnyomható: Nagyrészt a gombokat soroljuk fel mivel a telefonos felületen nincsenek lenyomható billentyűzetek
    </li> <li> b) Megjelenítendő adat: Minden informűció amit a gép szeretne küldeni a felhasználó felé.
         üzenetbuborék: a megjelenítendő adat közlésének módja
 </li>
-<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>3) kommunikáció:
+<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>3) Communication:
 </B>A játékosok egymással való kommunikációja
    <ul>a) Adatküldő: A játékos által elküldött adat feldolgozásáért felelős</ul>
     <ul>b) Adatfodadó: A játékoshoz érkező adat feldolgozásáért felelős</ul>
 </P>
-<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>4) felhasználó:
+<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>4) User(s):
 </B>A felhasználó kezelésére fenntartott osztály
     pont: A felhasználó pontozására szolgáló osztály
 </P>
 
-<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>5) Állapotinformációk:
+<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>5) Train_Condition_information:
 </B>A játékmeneten belüli állapotok kezelésére szolgáló osztály
    <ul></ul>
     <ul></ul>
 </P>
-<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>6) Vonat:
+<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>6) Train:
 </B>A vonat osztály a vonat adatainak kezelésére
    <ul>a) Típus: a vonat típusára való kezeléshez osztály</ul>
     <ul> b) fejlesztés: A vonat fejlesztéséhez szolgáló alrendszer</ul>
 </P>
-<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>7) Személyzet:
+<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>7) Crew:
 </B>A vonat személyzeti részéhez szolgáló osztály
   
 </P>
-<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>8) Útvonal:
+<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>8) Path:
 </B>A pályán lévő ót végigmenetére szolgáló útvonalat leíró osztály
    <ul></ul>
     <ul></ul>
-</P><P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>9) Esemény:
+</P><P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>9) Events:
 </B>Minden alkalmazáson belüli bekövetkezési esemény osztálya
  
-</P><P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>10) Bolt:
+</P><P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>10) Shop:
 </B>A vásárlás kezelésére szolgáló osztály
   
 </P>
 
-<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>11) Irányítás:
+<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>11) Controls:
 </B>A pályán belüli irányítás osztálya 
    <ul>a) bemenet: haladási irány bemenete</ul>
     <ul>  b) mozgás: haladási irány érétke</ul>
 	<ul> c) hely: haladás helyzetváltozásának osztálya</ul>
 </P>
-<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>12) Felvehető:
+<P STYLE="margin-top: 0.49cm; margin-bottom: 0cm; line-height: 100%"><B>12) Research:
 </B>Játék közben felvehető elemek osztálya
-    hely: A felvehető tárgyak helyére szolgáló osztály
+    hely: A felvehető tárgyak helyére szolgáló osztály (Shop/Events)
 
 </P>
 
@@ -564,100 +564,471 @@ GameController</p>
 
 
 		
-<p>
-<b>SCREEN</b><br>
-<u>menu</u> <br>
-	
-<ul>
-<li><b>buttons</b>
-    <li>singlepalyer
-					submenu
-	<li>multiplayer
-					submenu
-	<li>options
-				(sok minden)
-	<li>quit
-				sure
-	<li>logo
-	<li>music
-	<li>animations
-	
-	</ul></p></li>
 
- 		<p><b>
-USER</b></p>
-	<p>name</p>
-	<p>regist date</p>
-	<p>last visit date</p>
-	<p>save locations</p>
-	<p>last save</p>
-		<p>locatio</p>
-		<p>date</p>
+
+<p><b>SCREEN</b></p>
+<p><b>menu</b></p>
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="70">
+	<col width="70">
+	<col width="70">
+	<tbody>
+    <tr valign="top">
+		<td width="118">
+      
+      <p align="left" lang="hu-HU"><font size="3">singlepalyer</font></p>
+		</td>
+		<td width="75">
+
+      <p align="left" lang="hu-HU"><font size="3">submenu</font></p>
+		</td>
+		<td width="264">
+			     
+      
+      <p align="left" lang="hu-HU"><font size="3">buttons</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">			      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">multiplayer</font></p>
+		</td>
+		<td width="75">
+			
+
+      <p align="left" lang="hu-HU"><font size="3">submenu</font></p>
+		</td>
+		<td width="264">
+
+      <p align="left" lang="hu-HU"><font size="3">buttons</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">options</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">(sok minden)</font></p>
+		</td>
+		<td width="264">
+      <p align="left" lang="hu-HU"><font size="3">quit-->sure? ->Y/N </font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="118">
+      <p align="left" lang="hu-HU"><font size="3">Logo</font></p>
+		</td>
+		<td width="75">
+      <p align="left" lang="hu-HU"><font size="3">Sound/Music</font></p>
+		</td>
+		<td width="264">    
+      
+      <p align="left" lang="hu-HU"><font size="3">Animations </font></p>
+		</td>
+	</tr>
+
+			 </tbody>
+</table>
+      <p><b>USER</b></p>
+<p><b>name</b></p>
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="70">
+	<col width="70">
 	
-<p><b>SOUND</b></p>
-	<p>event</p>
-	<p>location</p>
+	<tbody>
+      	<tr valign="top">
+		<td width="70">
+      <p align="left" lang="hu-HU"><font size="3">regist date</font></p>
+		</td>
+		<td width="70">
+      
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">last visit date</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="70">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">save locations</font></p>
+		</td>
+		<td width="70">
+      
+ 
+      
+      <p align="left" lang="hu-HU"><font size="3">last save</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="70">
+			
+      
+      
+      <p align="left" lang="hu-HU"><font size="3">locatio</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">date</font></p>
+		</td>
+	</tr>
+  </tbody>
+</table>
+            <p><b>SOUND</b></p>
+
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="70">
+	<col width="70">
+	
+	<tbody>
+	<tr valign="top">
+		<td width="70">
 		
-<p><b>
-CONNECTION ESTABILISHER</b></p>
-	<p>server</p>
-	<p>points</p>
-	<p>players</p>
-	<p>ranks
-</p>
+      <p align="left" lang="hu-HU"><font size="3">event</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">location</font></p>
+		</td>
+	</tr>
+  </tbody>
+</table>
+          <p><b>CONNECTION ESTABILISHER</b></p>
+<p><b>server</b></p>
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="70">
+	<col width="70">
+	
+	<tbody>
+	<tr valign="top">
+		<td width="70">
+		
+      <p align="left" lang="hu-HU"><font size="3">players</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">ranks</font></p>
+		</td>
+		
+			<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">points</font></p>
+		</td>
+	</tr>
+  </tbody>
+</table>
+
 <p><b>TIMER</b></p>
-	<p>time</p>
-		<p>penalty</p>
 
-<p><b>EVENT HANDLER</b></p>
-	<p>pop up</p>
-		<p>location</p>
-		<p>sound</p>
-		<p>event</p>
-		<p>animation</p>
-	<p>text</p>
-	<p>border</p>
-	<p>time stop</p>	
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="70">
+	<col width="70">
 	
-<p><b>INPUT</b></p>
-	<p>type</p>
-		<p>mouse movement</p>
-		<p>click</p>
-		<p>button press</p>
-	<p>time</p>
-		<p>elapsed time</p>
+	<tbody>
+	<tr valign="top">
+		<td width="70">
 		
+      <p align="left" lang="hu-HU"><font size="3">time</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">penalty</font></p>
+		</td>
+	</tr>
+  </tbody>
+</table>
+<p><b>EVENT HANDLER</b></p>
 
-<p><b>COORDINATES</b></p>
-	<p>X</p>
-	<p>Y</p>
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="70">
+	<col width="70">
+	
+	<tbody>
+	<tr valign="top">
+		<td width="70">
+		
+      <p align="left" lang="hu-HU"><font size="3">pop up</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">location</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">sound</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">event</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">animation</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="120">
+		
+      <p align="left" lang="hu-HU"><font size="3">text</font></p>
+		</td>
+		<td width="120">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">border</font></p>
+		</td>
+		<td width="120">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">time stop/pause</font></p>
+		</td>
+	</tr>
+  </tbody>
+</table>
+
+ <p><b>INPUT</b></p>
+<p>type</p>
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="70">
+	<col width="70">
+	
+	<tbody>
+	<tr valign="top">
+		<td width="70">
+		
+      <p align="left" lang="hu-HU"><font size="3">mouse movement</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">click</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">button press</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="70">
+		
+      <p align="left" lang="hu-HU"><font size="3">keyboard interaction</font></p>
+		</td>
+		<td width="70">
+		
+      <p align="left" lang="hu-HU"><font size="3">keyboard key press</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">button press/interaction with train</font></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="70">
+		
+      <p align="left" lang="hu-HU"><font size="3">time</font></p>
+		</td>
+		<td width="70">
+		
+      <p align="left" lang="hu-HU"><font size="3">elapsed time</font></p>
+		</td>
+		
+	</tr>
+  </tbody>
+</table>
+	<p><b>COORDINATES</b></p>
+
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="70">
+	<col width="70">
+	
+	<tbody>
+	<tr valign="top">
+		<td width="70">
+		
+      <p align="left" lang="hu-HU"><font size="3">X</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">Y</font></p>
+		</td>
+	</tr>
+  </tbody>
+</table>
+
 <p><b>SCREEN DISPLAY</b></p>
-	<p>path</p>
-	<p>switch</p>
-	<p>animations</p>
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="70">
+	<col width="70">
 	
-	
+	<tbody>
+	<tr valign="top">
+		<td width="70">
+		
+      <p align="left" lang="hu-HU"><font size="3">path</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">switch</font></p>
+		</td>
+			<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">animations</font></p>
+		</td>
+	</tr>
+  </tbody>
+</table>
+
 <p><b>ANIMATIONS</b></p>
-	<p>timer</p>
-		<p>begin</p>
-		<p>end</p>
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="70">
+	<col width="70">
+	
+	<tbody>
+	<tr valign="top">
+		<td width="70">
+		
+      <p align="left" lang="hu-HU"><font size="3">timer</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">begin</font></p>
+		</td>
+			<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">end</font></p>
+		</td>
+	</tr>
+	
+  </tbody>
+</table>
+
+	
 <p>	location</p>
-	<p>entity</p>
-		<p>location</p>
-		<p>type</p>
-	<p>type</p>
-	<p>screen switch</p>
-<p><b>
-GAME HANDLER</b></p>
-	<p>fuel</p>
-		<p>type</p>
-		<p>amount</p>
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="70">
+	<col width="70">
+	
+	<tbody>
+	<tr valign="top">
+		<td width="70">
+		
+      <p align="left" lang="hu-HU"><font size="3">entity</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">location</font></p>
+		</td>
+			<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">type</font></p>
+		</td>
+	</tr>
+	
+  </tbody>
+</table>
+
+<p><b>GAMEPLAY</b></p>
+<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="70">
+	<col width="70">
+	
+	<tbody>
+	<tr valign="top">
+		<td width="70">
+		
+      <p align="left" lang="hu-HU"><font size="3">fuel</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">amount</font></p>
+		</td>
+			
+	</tr>
+		
+  </tbody>
+</table>
 	<p>staions</p>
-		<p>all station</p>
-		<p>remaining station</p>
-		<p>penaltys</p>
-		<p>timer</p>
-			<p>remaining time</p>
+	<table border="1" cellpadding="4" cellspacing="3" width="90%">
+	<col width="70">
+	<col width="70">
+	
+	<tbody>
+	
+	<tr valign="top">
+		<td width="70">
+		
+      <p align="left" lang="hu-HU"><font size="3">start/end stations</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">refuel station</font></p>
+		</td>
+				<td width="70">
+		
+      <p align="left" lang="hu-HU"><font size="3">penaltys</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">timer</font></p>
+		</td>
+		<td width="70">
+      
+    
+      
+      <p align="left" lang="hu-HU"><font size="3">remaining time</font></p>
+		</td>
+	</tr>
+	
+  </tbody>
+</table>
+
+	
 <P CLASS="western" STYLE="margin-left: 0.64cm; margin-bottom: 0.35cm">
 <BR><BR>
 </P>
@@ -669,9 +1040,9 @@ GAME HANDLER</b></p>
 <H1 CLASS="western"><A NAME="_3.1_Statikus_modell"></A>3.1 Statikus
 modell</H1>
 
-<IMG SRC="ko.png" NAME="kép2.3" ALIGN=LEFT HSPACE=12 WIDTH=588 HEIGHT=480 BORDER=0><BR>
+<IMG SRC="KO.png" NAME="kép2.3" ALIGN=LEFT  BORDER=0><BR>
 <P CLASS="western" STYLE="margin-left: 0.64cm; margin-bottom: 0.35cm">
-<BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR>
 </P>
 <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
 <H1 CLASS="western"><A NAME="_3.1.1_Kapcsolatok_pontos%C3%ADt%C3%A1sa"></A>
@@ -1638,9 +2009,7 @@ Bázisosztályok:<BR><BR><BR>
 3.2.Dinamikus modell:<BR></H1>
 
 
-<P LANG="" CLASS="western" STYLE="margin-bottom: 0.35cm"><IMG SRC="Controls.png" NAME="kép10.2" ALIGN=BOTTOM WIDTH=500 HEIGHT=500 BORDER=0></P>
-<P LANG="" CLASS="western" STYLE="margin-bottom: 0.35cm"><IMG SRC="Shop_p1.png" NAME="kép10" ALIGN=BOTTOM WIDTH=500 HEIGHT=500 BORDER=0></P>
-<P LANG="" CLASS="western" STYLE="margin-bottom: 0.35cm"><IMG SRC="Shop_p2.png" NAME="kép10.1" ALIGN=BOTTOM WIDTH=500 HEIGHT=500 BORDER=0></P>
+<P LANG="" CLASS="western" STYLE="margin-bottom: 0.35cm"><IMG SRC="DINAMIKUS.png" NAME="kép10.2" ALIGN=BOTTOM BORDER=0></P>
 
 
 
@@ -1649,14 +2018,12 @@ Bázisosztályok:<BR><BR><BR>
 <H1 CLASS="western"></H1>
 
 
-<H1 CLASS="western">3.3 Funkcionális modell<BR><BR><BR>
+<H1 CLASS="western">3.3 Funkcionális modell<BR>
 </H1>
 <P CLASS="western" STYLE="margin-bottom: 0.35cm">Főbb funkcionális
 folyamatok belépés, útvonal tervezése, állapotok ellenőrzése és
 kivitelezés.</P>
-<P CLASS="western" STYLE="margin-bottom: 0.35cm">Belépés:</P>
-<P CLASS="western" STYLE="margin-bottom: 0.35cm"><BR><BR>
-</P>
+
 <P CLASS="western" STYLE="margin-bottom: 0.35cm">Útvonal terv:</P>
 <P LANG="" CLASS="western" STYLE="margin-bottom: 0.35cm"><IMG SRC="fullscale_utvonal.png" NAME="kép10" ALIGN=BOTTOM WIDTH=500 HEIGHT=500 BORDER=0></P>
 
@@ -1698,6 +2065,9 @@ Az operációk azonosítása<BR><BR><BR>
 </H1><H1 CLASS="western" STYLE="page-break-before: always"><A NAME="_3.5_Az_anal%C3%ADzis"></A>
 3.5 Az analízis modell osztálydiagramja<BR><BR><BR>
 </H1>
+
+
+
 <P CLASS="western" STYLE="margin-top: 0.49cm; margin-bottom: 0.49cm; line-height: 100%">
 <P LANG="" CLASS="western" STYLE="margin-bottom: 0.35cm"><IMG SRC="3.5A.png" NAME="kép10.2" ALIGN=BOTTOM WIDTH=500 HEIGHT=500 BORDER=0></P>
 <P LANG="" CLASS="western" STYLE="margin-bottom: 0.35cm"><IMG SRC="3.5B.png" NAME="kép10" ALIGN=BOTTOM WIDTH=500 HEIGHT=500 BORDER=0></P>
@@ -1716,10 +2086,13 @@ Az operációk azonosítása<BR><BR><BR>
 Az analízis modell osztályainak listája</H1>
 
 
-3.6 :
+
+
+<h2>Az egész modell osztályainak felsorolása</h2>
+<P LANG="" CLASS="western" STYLE="margin-bottom: 0.35cm"><IMG SRC="33333.png" NAME="kép10" ALIGN=BOTTOM BORDER=0></P>
 <p>
 alrendszer:</p>
-<p>Képernyő</p>
+<p>Display</p>
 <ul>	név: típus: leírás:
 	<ul>menu 		/Játék menüjének kezelése</ul>
 	<ul>button		/gombok kezelésére szolgáló osztály</ul>
@@ -1728,30 +2101,30 @@ alrendszer:</p>
 	<ul>kilépés /gomb 	/kilépés opciója</ul>
 	<ul>animáló /alrendszer  /Játékbeli animációk kezelése</ul></ul>
  		
-<p>Felhasználó:</p>
+<p>User(s):</p>
 	<ul>név  típus  leírás</ul>
 	<ul>name /string /játékos neve</ul>
 	<ul>regist /date /dátum játékos regisztrálási dátuma</ul>
 	<ul>last visit /date /dátum játékos legutóljára belépési időpontja</ul>
 	<ul>save /locations /Mentett adat játékos legutóljára elmentett helye</ul>
 	
-<p>Hang:</p>
+<p>Sound:</p>
 	<ul>név: típus leírás</ul>
 	<ul>event /esemény /esemény amikor hangnak kell megjelennie</ul>
 	<ul>location /hely /helyszín ahol a hang megjelenik</ul>
 		
-<p>Kapcsolat felvevő:</p>
+<p>Connection Establisher:</p>
 	<ul>név: típus: leírás:
 	<ul>server 		/szerver ahol a kapcsolatot fenntartjuk</ul>
 	<ul>points /hely	/hely ahol a játékos jelenleg tartózkodik</ul>
 	<ul>players /player 	/játékosok akik csatlakoztak</ul>
 	<ul>ranks 			/Ki milyen rangot ért el eltárolása</ul></ul>
 
-<p>Időmérő:</p>
+<p>Timer:</p>
 	<ul>név: típus: leírás:</ul>
 	<ul>time: /int 	/idő ami rendelkezésre áll a játékban</ul>
 
-<p>Esemény kezelő:</p>
+<p>Events:</p>
 	<ul>név: típus: leírás:</ul>
 	<ul>felugró ablak  	/a felugró ablakok kezelése</ul>
 	<ul>hely 		/hol jelenik meg az ablak</ul>
@@ -1760,27 +2133,27 @@ alrendszer:</p>
 	<ul>animáció 	/animáció	/melyik animáció jelenik meg a felugró ablakhoz</ul>
 	<ul>szöveg 	/szöveg 		/szöveg az ablakhoz</ul>
 	
-<p>Bemeneti:</p>
+<p>Input:</p>
 	<ul>név: típus leírás:</ul>
 	<ul>type 		/meghatározza a megjelenítési elem típusát</ul>
 	<ul>idő /date 	/meghatározza a megjelenített elem idejét amíg a képernyőn tartózkodik</ul>
 
-<p>Koordináta:</p>
+<p>Coordinates:</p>
 	<ul>név: típus: leírás:</ul>
 	<ul>X	/float	/x koordinátája a mozgásnál</ul>
 	<ul>Y	/float 	/y koordinátája a mozgásnál</ul>
 
-<p>Képmegjelenítés:</p>
+<p>Screen Display:</p>
 	<ul>név: típus: leírás:</ul>
 	<ul>út: 		/az út amelyet végig kell járni egy pályán</ul>
 	<ul>switch		/A képek közötti váltás jelzése</ul>
 
-<p>Animációk:</p>
+<p>Animations:</p>
 	<ul>név: típus: leírás:</ul>
 	<ul>időzítő  /date 	/időzítő, hogy mikor kezdődjön és mikor végződjön az adott animáció</ul>
 	<ul>entitás  		/Definiálja mit jelenítünk meg.</ul>
 
-<p>Játékvezérlő</p>
+<p>Game_Controller</p>
 	<ul>név: Típus: leírás:</ul>
 	<ul>üzemanyagszámláló  /float /az üzemanyag mennyiségét tartja számon</ul>
 	<ul>állomások 		/meghatározza milyen állomásokon kell még végigmenni</ul>
@@ -1803,6 +2176,9 @@ tartalmazzák az azokban használt osztályokat. Ezek a következők:</P>
 
 <p  style="margin-bottom: 0cm; text-align: left;"><a href="h1.html"><big><font size="6"> H1</big></a></p>
 
+<p  style="margin-bottom: 0cm; text-align: left;"><a href="h3.html"><big><font size="6"> H3</big></a></p>
+
+<p  style="margin-bottom: 0cm; text-align: left;"><a href="h5.html"><big><font size="6"> H5</big></a></p>
 <p  style="margin-bottom: 0cm; text-align: left;"><a href="kezdolap.html"><big><font size="6"> Kezdőlapra</big></a></p>
 
 <p  style="margin-bottom: 0cm; text-align: left;"><a href="munkanaplok.html"><big><font size="6"> Választás Munkanaplók között</big></a></p>
