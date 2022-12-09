@@ -27,7 +27,7 @@ private static final BufferedImage BBG = Imaging.scale(Resources.images().get("b
   private Menu mainMenuOptions;
   private Menu mainMenuExit;
 
-  public MenuScreen2() 
+  public MenuScreen() 
   {
     super("MENU");
   }
@@ -122,6 +122,19 @@ private static final BufferedImage BBG = Imaging.scale(Resources.images().get("b
 	  
 	  Game.window().getRenderComponent().fadeOut(5000);
 	  Game.screens().add(new MenuOptions());
+	  Game.screens().remove(Game.screens().current());
+	  Game.window().getRenderComponent().fadeIn(1500); 
+  }
+  
+  public void OpenMulti()
+  {
+	  this.mainMenuStart.setEnabled(false);
+	  this.mainMenuMultiplayer.setEnabled(false);
+	  this.mainMenuOptions.setEnabled(false);
+	  this.mainMenuExit.setEnabled(false);
+	  
+	  Game.window().getRenderComponent().fadeOut(5000);
+	  Game.screens().add(new MenuMultiplayer());
 	  Game.screens().remove(Game.screens().current());
 	  Game.window().getRenderComponent().fadeIn(1500); 
   }
