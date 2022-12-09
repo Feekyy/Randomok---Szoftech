@@ -1,5 +1,5 @@
 //ADD Button
-
+ private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {    
          int sum = 0;
  
         if(chkBodyguards.isSelected())
@@ -111,3 +111,4 @@
         }
         
         txtbill.setText(Integer.toString(sum));
+ }
