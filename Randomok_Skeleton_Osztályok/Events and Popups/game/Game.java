@@ -7,7 +7,7 @@ public class Game {
 private ArrayList <Event>Popup;
 private Actor train;
 
-List<String> commands = new ArrayList<>(Arrays.asList("left arrow","right arrow","down arrow","up arrow","space bar","enter"));		//nyilak(left=ball,right=jobb) a vonat mozgatására vertikálisan míg , nyilak(left=ball,right=jobb,up=fel,down=le) mind a 4 a felugró "Event" buttonok közti navigálás, space bar = játék megállítása /előugrik a főmenű , a nyílakkal navigált gomb lenyomása
+List<String> commands = new ArrayList<>(Arrays.asList("left arrow","right arrow","down arrow","up arrow","space bar","enter"));		//nyilak(left=bal,right=jobb) a vonat mozgatására vertikálisan míg , nyilak(left=ball,right=jobb,up=fel,down=le) mind a 4 a felugró "Event" buttonok közti navigálás, space bar = játék megállítása /előugrik a főmenű , a nyílakkal navigált gomb lenyomása
 
 List<String> objects = new ArrayList<>(Arrays.asList());
 Popup.add(new Event("Fuel leak",Direction.NOEXIT,2,Direction.NOEXIT,Direction.NOEXIT));
